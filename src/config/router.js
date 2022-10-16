@@ -7,7 +7,7 @@ import Dashboard from "../screens/Dashboard";
 import "../App.css";
 
 
-function AppRouter(props) {
+function AppRouter() {
   return (
     <>
       <Router>

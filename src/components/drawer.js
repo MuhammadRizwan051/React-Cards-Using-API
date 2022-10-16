@@ -15,7 +15,8 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import {Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import Home from '../screens/Home'
 import Message from '../screens/Dashboard Screens/message'
 import Notification from '../screens/Dashboard Screens/notification'
 import Feedback from '../screens/Dashboard Screens/feedback'
@@ -34,6 +35,9 @@ function ResponsiveDrawer(props) {
     const drawer = (
         <div>
             <Toolbar />
+            <ListItem>
+                {/* <ListItemButton onClick={()=>navigate('about')}>Go Back Home</ListItemButton> */}
+            </ListItem>
             <Divider />
             <List>
                 {[
@@ -96,7 +100,7 @@ function ResponsiveDrawer(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        Responsive drawer
+                        Dashboard
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -136,6 +140,7 @@ function ResponsiveDrawer(props) {
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
+                <Toolbar />
                 <Box>
                     <Routes>
                         <Route path="message" element={<Message />} />
@@ -145,7 +150,6 @@ function ResponsiveDrawer(props) {
                         {/* <Route path="data" element={<AllData />} /> */}
                     </Routes>
                 </Box>
-                <Toolbar />
 
             </Box>
         </Box>

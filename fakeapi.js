@@ -1,5 +1,9 @@
 import React from "react";
 
+// data.map((e,i)=>{
+// e.image
+// })
+
 function fakeapi() {
   let data = [
     {
