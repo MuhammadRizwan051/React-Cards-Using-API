@@ -18,7 +18,7 @@ function Store() {
 
     return (
         <>
-            <h1>Store</h1>
+            <h1>Store Products</h1>
             {/* <MediaCard /> */}
         </>
     )
