@@ -212,7 +212,7 @@ function App() {
   ];
   return (
     <>
-      <AppRouter data={data}/>
+      <AppRouter />
     </>
   );
 }

@@ -16,11 +16,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import Home from '../screens/Home'
+// import Home from '../screens/Home'
 import Message from '../screens/Dashboard Screens/message'
 import Notification from '../screens/Dashboard Screens/notification'
 import Feedback from '../screens/Dashboard Screens/feedback'
 import Store from '../screens/Dashboard Screens/store';
+// import Product from '../screens/Dashboard Screens/product';
+
 
 const drawerWidth = 240;
 
@@ -60,7 +62,7 @@ function ResponsiveDrawer(props) {
                         route: 'store',
                         name: 'Store',
                         icon: () => <InboxIcon />
-                    }
+                    },
                 ]
                     .map((text, index) => (
                         <ListItem key={index} disablePadding>
